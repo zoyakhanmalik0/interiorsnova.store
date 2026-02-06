@@ -1,0 +1,11 @@
+.git
+.gitignore
+.env.example
+EMAIL_SERVER_README.md
+LINK_MAP.md
+node_modules
+test-email.js
+server.js
+.env
+*.log
+.DS_Store

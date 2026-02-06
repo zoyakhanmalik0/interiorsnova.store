@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About Us - Interiors Nova</title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="footer.css">
+	<link rel="stylesheet" href="legal.css">
+	<style>
+		.hero-section {
+			background: linear-gradient(135deg, #d6a71e 0%, #b8904a 100%);
+			color: #fff;
+			padding: 80px 0;
+			text-align: center;
+			margin-bottom: 60px;
+		}
+
+		.hero-section h1 {
+			font-size: clamp(2rem, 5vw, 3.5rem);
+			font-weight: 700;
+			margin-bottom: 16px;
+			letter-spacing: -0.02em;
+		}
+
+		.hero-section p {
+			font-size: clamp(1rem, 2vw, 1.25rem);
+			color: rgba(255, 255, 255, 0.95);
+			line-height: 1.6;
+			max-width: 600px;
+			margin: 0 auto;
+		}
+
+		.about-container {
+			max-width: 900px;
+			margin: 0 auto;
+			padding: 40px 20px 80px;
+		}
+
+		.story-section,
+		.mission-section,
+		.values-section {
+			margin-bottom: 60px;
+		}
+
+		.section-header {
+			display: flex;
+			align-items: center;
+			gap: 15px;
+			margin-bottom: 25px;
+		}
+
+		.section-header h2 {
+			font-size: 1.75rem;
+			font-weight: 700;
+			color: #222;
+			margin: 0;
+			margin-bottom: 12px;
+			padding-bottom: 12px;
+			border-bottom: 3px solid #d6a71e;
+			letter-spacing: -0.01em;
+		}
+
+		.divider {
+			display: none;
+		}
+
+		.about-text {
+			color: #555;
+			line-height: 1.8;
+			font-size: 1rem;
+			margin-bottom: 20px;
+		}
+
+		.values-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+			gap: 30px;
+			margin-top: 30px;
+		}
+
+		.value-card {
+			background: #fff;
+			padding: 30px;
+			border-left: 4px solid #d6a71e;
+			border-radius: 8px;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+
+		.value-card:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 30px rgba(214, 167, 30, 0.15);
+		}
+
+		.value-card h3 {
+			color: #d6a71e;
+			margin-top: 0;
+			margin-bottom: 12px;
+			font-size: 1.2rem;
+			font-weight: 600;
+		}
+
+		.value-card p {
+			color: #555;
+			margin: 0;
+			line-height: 1.6;
+			font-size: 1rem;
+		}
+
+		.why-choose-us {
+			background: #fff;
+			padding: 40px;
+			border-radius: 12px;
+			margin-top: 40px;
+			box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+			border-left: 4px solid #d6a71e;
+		}
+
+		.why-choose-us h3 {
+			color: #222;
+			font-size: 1.2rem;
+			font-weight: 600;
+			margin-top: 0;
+			margin-bottom: 25px;
+		}
+
+		.features-list {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+			gap: 20px;
+		}
+
+		.feature-item {
+			display: flex;
+			gap: 12px;
+		}
+
+		.feature-icon {
+			color: #d6a71e;
+			font-size: 1.5rem;
+			flex-shrink: 0;
+		}
+
+		.feature-item p {
+			color: #555;
+			margin: 0;
+			line-height: 1.6;
+			font-size: 1rem;
+		}
+
+		.cta-section {
+			background: linear-gradient(135deg, #d6a71e 0%, #b8904a 100%);
+			padding: 50px 20px;
+			text-align: center;
+			border-radius: 12px;
+			margin-top: 60px;
+		}
+
+		.cta-section h2 {
+			color: #fff;
+			margin: 0 0 20px 0;
+			font-size: 2rem;
+		}
+
+		.cta-section p {
+			color: rgba(255, 255, 255, 0.95);
+			margin-bottom: 30px;
+			font-size: 1.1rem;
+		}
+
+		.cta-button {
+			display: inline-block;
+			background: #fff;
+			color: #d6a71e;
+			padding: 14px 40px;
+			text-decoration: none;
+			border-radius: 8px;
+			font-weight: 600;
+			transition: all 0.3s ease;
+			font-size: 1.05rem;
+		}
+
+		.cta-button:hover {
+			background: #f0f0f0;
+			transform: translateY(-2px);
+			box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+		}
+
+		@media (max-width: 768px) {
+			.hero-section {
+				padding: 40px 20px;
+			}
+
+			.about-container {
+				padding: 30px 15px 60px;
+			}
+
+			.section-header {
+				flex-direction: column;
+				text-align: center;
+			}
+
+			.divider {
+				width: 40px;
+			}
+
+			.values-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.why-choose-us {
+				padding: 25px;
+			}
+
+			.cta-section {
+				padding: 40px 20px;
+			}
+
+			.cta-section h2 {
+				font-size: 1.5rem;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<!-- Header will be loaded from partial -->
+	<div id="siteHeader"></div>
+
+	<main>
+		<!-- Hero Section -->
+		<section class="hero-section">
+			<h1>About Interiors Nova</h1>
+			<p>Transforming spaces into beautiful, functional furniture experiences since day one</p>
+		</section>
+
+		<!-- Main Content -->
+		<section class="about-container">
+			<!-- Our Story -->
+			<div class="story-section">
+				<div class="section-header">
+					<h2>Our Story</h2>
+					<div class="divider"></div>
+				</div>
+				<p class="about-text">
+					Interiors Nova was founded with a simple mission: to bring quality, elegant, and affordable furniture solutions to every home. We believe that everyone deserves to live in a beautifully designed space that reflects their personality and meets their practical needs.
+				</p>
+				<p class="about-text">
+					What started as a passion for interior design and craftsmanship has grown into a trusted brand known for delivering exceptional furniture pieces and custom design solutions. Our team works closely with each client to understand their vision and bring it to life with precision and creativity.
+				</p>
+				<p class="about-text">
+					Today, Interiors Nova stands as a premier destination for custom furniture and interior design services, committed to quality, innovation, and customer satisfaction.
+				</p>
+			</div>
+
+			<!-- Our Mission & Vision -->
+			<div class="mission-section">
+				<div class="section-header">
+					<h2>Our Mission & Vision</h2>
+					<div class="divider"></div>
+				</div>
+				<div class="why-choose-us">
+					<h3>Our Mission</h3>
+					<p class="about-text">
+						To provide high-quality, custom furniture and interior design solutions that transform spaces and exceed customer expectations through innovative design, superior craftsmanship, and exceptional service.
+					</p>
+
+					<h3 style="margin-top: 30px;">Our Vision</h3>
+					<p class="about-text">
+						To be the most trusted and preferred furniture and interior design brand, known for delivering beautiful, functional, and sustainable furniture solutions that enhance the lives of our customers.
+					</p>
+				</div>
+			</div>
+
+			<!-- Core Values -->
+			<div class="values-section">
+				<div class="section-header">
+					<h2>Our Core Values</h2>
+					<div class="divider"></div>
+				</div>
+				<div class="values-grid">
+					<div class="value-card">
+						<h3>Quality</h3>
+						<p>We never compromise on quality. Every piece is crafted with attention to detail and built to last.</p>
+					</div>
+					<div class="value-card">
+						<h3>Creativity</h3>
+						<p>We embrace innovation and creative thinking to deliver unique designs that stand out.</p>
+					</div>
+					<div class="value-card">
+						<h3>Customer Focus</h3>
+						<p>Your satisfaction is our priority. We listen, understand, and deliver solutions tailored to your needs.</p>
+					</div>
+					<div class="value-card">
+						<h3>Integrity</h3>
+						<p>Transparency, honesty, and ethical practices guide all our business relationships and decisions.</p>
+					</div>
+					<div class="value-card">
+						<h3>Reliability</h3>
+						<p>We keep our promises. On-time delivery, clear communication, and consistent quality are our commitments.</p>
+					</div>
+					<div class="value-card">
+						<h3>Affordability</h3>
+						<p>Premium quality doesn't have to break the bank. We offer excellent value for your investment.</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Why Choose Us -->
+			<div class="why-choose-us" style="margin-top: 50px;">
+				<h3>Why Choose Interiors Nova?</h3>
+				<div class="features-list">
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<p><strong>Custom Designs</strong> - Furniture tailored to your space and style preferences</p>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<p><strong>Quality Materials</strong> - Premium materials selected for durability and aesthetics</p>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<p><strong>Expert Team</strong> - Skilled craftspeople and designers with years of experience</p>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<p><strong>Transparent Pricing</strong> - Clear costs with no hidden fees or surprises</p>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<p><strong>Advance Payment Model</strong> - Secure advance payment ensures dedicated service</p>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<p><strong>On-Time Delivery</strong> - We value your time and deliver as promised</p>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<p><strong>After-Sales Support</strong> - 1-year warranty on all furniture pieces</p>
+					</div>
+					<div class="feature-item">
+						<div class="feature-icon">✓</div>
+						<p><strong>Professional Service</strong> - From consultation to installation, we handle everything</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- CTA Section -->
+			<div class="cta-section">
+				<h2>Ready to Transform Your Space?</h2>
+				<p>Let's create beautiful furniture and interiors that tell your story</p>
+				<a href="contact-us.html" class="cta-button">Get in Touch</a>
+			</div>
+		</section>
+	</main>
+
+	<!-- Footer will be loaded from partial -->
+	<div id="siteFooter"></div>
+
+	<script src="load-partials.js"></script>
+	<script src="script.js"></script>
+
+</body>
+
+</html>

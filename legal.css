@@ -1,0 +1,267 @@
+/* =======================
+   Legal Pages Styles (Privacy Policy, Terms & Conditions, Refund & Return)
+======================= */
+
+/* Hero Section */
+.legal-hero {
+  background: linear-gradient(135deg, #d6a71e 0%, #b8904a 100%);
+  color: #fff;
+  padding: 80px 0;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.legal-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.legal-hero h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+.legal-hero p {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.6;
+}
+
+/* Legal Section */
+.legal-section {
+  padding: 40px 0 80px;
+}
+
+.legal-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Legal Block */
+.legal-block {
+  margin-bottom: 48px;
+  line-height: 1.8;
+}
+
+.legal-block h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 24px;
+  margin-top: 40px;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #d6a71e;
+  letter-spacing: -0.01em;
+}
+
+.legal-block h2:first-child {
+  margin-top: 0;
+}
+
+.legal-block h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  letter-spacing: -0.01em;
+}
+
+.legal-block p {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 16px;
+  line-height: 1.8;
+}
+
+.legal-block p strong {
+  color: #222;
+  font-weight: 600;
+}
+
+.legal-block ul {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 24px;
+}
+
+.legal-block ul li {
+  color: #555;
+  font-size: 1rem;
+  margin-bottom: 12px;
+  padding-left: 24px;
+  position: relative;
+  line-height: 1.6;
+}
+
+.legal-block ul li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #d6a71e;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.legal-block ul li strong {
+  color: #222;
+  font-weight: 600;
+}
+
+/* Footer Note */
+.legal-footer-note {
+  background: rgba(214, 167, 30, 0.08);
+  padding: 24px;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 60px;
+  border-left: 4px solid #d6a71e;
+}
+
+.legal-footer-note p {
+  margin: 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.legal-footer-note p strong {
+  color: #222;
+  font-weight: 600;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .legal-hero {
+    padding: 60px 0;
+    margin-bottom: 40px;
+  }
+
+  .legal-hero h1 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .legal-hero p {
+    font-size: 1rem;
+  }
+
+  .legal-section {
+    padding: 30px 0 50px;
+  }
+
+  .legal-block {
+    margin-bottom: 36px;
+  }
+
+  .legal-block h2 {
+    font-size: 1.5rem;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
+  .legal-block h3 {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    margin-bottom: 12px;
+  }
+
+  .legal-block p {
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+  }
+
+  .legal-block ul li {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    padding-left: 22px;
+  }
+
+  .legal-footer-note {
+    padding: 20px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .legal-hero {
+    padding: 50px 0;
+    margin-bottom: 30px;
+  }
+
+  .legal-hero h1 {
+    font-size: 1.5rem;
+    margin-bottom: 8px;
+  }
+
+  .legal-hero p {
+    font-size: 0.9rem;
+  }
+
+  .legal-section {
+    padding: 20px 0 40px;
+  }
+
+  .legal-content {
+    padding: 0 16px;
+  }
+
+  .legal-block {
+    margin-bottom: 28px;
+  }
+
+  .legal-block h2 {
+    font-size: 1.25rem;
+    margin-top: 28px;
+    margin-bottom: 14px;
+    padding-bottom: 10px;
+  }
+
+  .legal-block h3 {
+    font-size: 1rem;
+    margin-top: 16px;
+    margin-bottom: 10px;
+  }
+
+  .legal-block p {
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+
+  .legal-block ul li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    padding-left: 20px;
+  }
+
+  .legal-block ul li:before {
+    font-size: 1rem;
+  }
+
+  .legal-footer-note {
+    padding: 16px;
+    margin-top: 32px;
+  }
+
+  .legal-footer-note p {
+    font-size: 0.85rem;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .legal-hero,
+  #siteHeader,
+  #siteFooter {
+    display: none;
+  }
+
+  .legal-section {
+    padding: 0;
+  }
+
+  .legal-block {
+    page-break-inside: avoid;
+  }
+}
